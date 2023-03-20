@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {Provider} from 'react-redux';
-import {storage} from "react-persist/lib/storage";
+import storage from "redux-persist/lib/storage";
 import {PersistGate} from "redux-persist/integration/react";
 import {configureStore } from "@reduxjs/toolkit"
 import {persistStore, 
@@ -14,8 +14,9 @@ import {persistStore,
   PERSIST, 
   PURGE, 
   REGISTER} from "redux-persist"
-import {reducer} from "state"
+import authSlice from "./state/index.js"
 
+const {reducer} = authSlice
 
   //config localStorage
   const persistConfig = {key: "root", storage, version: 1}
