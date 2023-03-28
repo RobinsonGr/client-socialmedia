@@ -1,3 +1,4 @@
+import Navbar from "../navbar";
 
 
 const homePage = () => {
@@ -5,7 +6,7 @@ const homePage = () => {
 
 
     return (
-        <div>homePage</div>
+        <Navbar/>
     )
 
 }

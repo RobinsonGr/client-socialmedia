@@ -18,7 +18,7 @@ import authSlice from "./state/index.js"
 
 const {reducer} = authSlice
 
-  //config localStorage
+  //Config localStorage
   const persistConfig = {key: "root", storage, version: 1}
 
 
@@ -28,7 +28,7 @@ const {reducer} = authSlice
     reducer: persistedReducer,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
       serializableCheck: {
-        //these actions are to avoid
+        //These actions are to be avoid
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
       },
     }),
@@ -38,6 +38,7 @@ const {reducer} = authSlice
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>

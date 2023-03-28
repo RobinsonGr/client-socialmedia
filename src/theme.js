@@ -2,7 +2,7 @@
 
 export const colorTokens = {
 
-
+// White to black (grey scale)
     grey: {
         0: "#FFFFFF",
         10: "#F6F6F6",
@@ -19,6 +19,8 @@ export const colorTokens = {
         1000: "#000000",
 
     },
+
+    //Light to dark blue pattern
 
     primary: {
         50: "#E6FBFF",
