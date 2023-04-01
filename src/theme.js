@@ -17,7 +17,6 @@ export const colorTokens = {
         800: "#1A1A1A",
         900: "#0A0A0A",
         1000: "#000000",
-
     },
 
     //Light to dark blue pattern
