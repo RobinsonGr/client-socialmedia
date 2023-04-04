@@ -17,7 +17,10 @@ const registerValidationSchema = yup.object().shape({
     lastName: yup.string().required("Last name is required"),
     occupation: yup.string().required("Occupation is required"),
     email: yup.string().required("email is required"),
-    password: yup.string().required("password is required")
+    password: yup.string().required("password is required"),
+    location: yup.string().required("required"),
+    occupation: yup.string().required("required"),
+    picture: yup.string().required("required")
 })
 
 const loginValidationSchema = yup.object().shape({
